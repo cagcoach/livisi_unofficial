@@ -29,8 +29,6 @@ VARIABLE_DEVICE_TYPES: Final = ["VariableActuator"]
 VRCC_DEVICE_TYPES: Final = ["VRCC"]
 WDS_DEVICE_TYPES: Final = ["WDS", "BT-WDS"]
 
-OPERATION_MODES: Final = ["Auto", "Manu"]
-
 BATTERY_POWERED_DEVICES = [
     "BRC8",
     "ISC2",
@@ -93,3 +91,6 @@ STATE_PROPERTIES = [
 EVENT_BUTTON_PRESSED = "button_pressed"
 EVENT_BUTTON_LONG_PRESSED = "button_long_pressed"
 EVENT_MOTION_DETECTED = "motion_detected"
+
+OPERATION_MODE_AUTO = "Auto"
+OPERATION_MODE_MANU = "Manu"
