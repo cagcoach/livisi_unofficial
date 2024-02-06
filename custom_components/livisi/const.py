@@ -29,6 +29,8 @@ VARIABLE_DEVICE_TYPES: Final = ["VariableActuator"]
 VRCC_DEVICE_TYPES: Final = ["VRCC"]
 WDS_DEVICE_TYPES: Final = ["WDS", "BT-WDS"]
 
+OPERATION_MODES: Final = ["Auto", "Manu"]
+
 BATTERY_POWERED_DEVICES = [
     "BRC8",
     "ISC2",
@@ -63,6 +65,7 @@ SHUTTER_LEVEL: Final = "shutterLevel"
 DIM_LEVEL: Final = "dimLevel"
 VALUE: Final = "value"
 POINT_TEMPERATURE: Final = "pointTemperature"
+OPERATION_MODE: Final = "operationMode"
 SET_POINT_TEMPERATURE: Final = "setpointTemperature"
 
 IS_OPEN: Final = "isOpen"
@@ -84,6 +87,7 @@ STATE_PROPERTIES = [
     POWER_CONSUMPTION,
     SHUTTER_LEVEL,
     DIM_LEVEL,
+    OPERATION_MODE
 ]
 
 EVENT_BUTTON_PRESSED = "button_pressed"
