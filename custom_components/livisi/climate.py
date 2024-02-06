@@ -25,6 +25,8 @@ from .const import (
     MAX_TEMPERATURE,
     MIN_TEMPERATURE,
     VRCC_DEVICE_TYPES,
+    OPERATION_MODE_AUTO,
+    OPERATION_MODE_MANU,
 )
 
 from .coordinator import LivisiDataUpdateCoordinator
