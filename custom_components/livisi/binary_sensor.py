@@ -1,4 +1,5 @@
 """Code to handle a Livisi Binary Sensor."""
+
 from __future__ import annotations
 
 
@@ -171,3 +172,6 @@ class LivisiBatteryLowSensor(LivisiEntity, BinarySensorEntity):
 
         if device is not None:
             self._attr_is_on = device.battery_low
+            # hass is not yet set during first initialization
+            if self.hass is not None:
+                self.async_write_ha_state()
